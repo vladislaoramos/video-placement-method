@@ -1,0 +1,74 @@
+{
+  "RU": {
+    "destination": "PL",
+    "weight": 1290
+  },
+  "UA": {
+    "destination": "PL",
+    "weight": 860
+  },
+  "DE": {
+    "destination": "",
+    "weight": 0
+  },
+  "ES": {
+    "destination": "FR",
+    "weight": 1250
+  },
+  "NL": {
+    "destination": "DE",
+    "weight": 2650
+  },
+  "BE": {
+    "destination": "DE",
+    "weight": 720
+  },
+  "FR": {
+    "destination": "DE",
+    "weight": 1220
+  },
+  "GB": {
+    "destination": "DE",
+    "weight": 470
+  },
+  "PT": {
+    "destination": "DE",
+    "weight": 630
+  },
+  "TR": {
+    "destination": "DE",
+    "weight": 2650
+  },
+  "SE": {
+    "destination": "NL",
+    "weight": 650
+  },
+  "FI": {
+    "destination": "RU",
+    "weight": 1100
+  },
+  "IT": {
+    "destination": "DE",
+    "weight": 1550
+  },
+  "NO": {
+    "destination": "SE",
+    "weight": 550
+  },
+  "KZ": {
+    "destination": "RU",
+    "weight": 2800
+  },
+  "PL": {
+    "destination": "DE",
+    "weight": 600
+  },
+  "EG": {
+    "destination": "TR",
+    "weight": 1870
+  },
+  "LV": {
+    "destination": "PL",
+    "weight": 860
+  }
+}
