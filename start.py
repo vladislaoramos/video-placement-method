@@ -16,19 +16,20 @@ def main():
     start_time = datetime.datetime.now()
 
     countries = get_country_codes()
+    logger.debug(f"getting video set from trends, number of regions: {len(countries)}")
 
-    logger.debug("getting video set from trends, number of regions:", len(countries))
-    video_set = get_video_set(countries)
+    for country in countries:
+        video_set = get_video_set(country)
 
-    dp = DataParser(video_set, API_KEYS_COUNT)
-    received_data = dp.get_response()
+        dp = DataParser(video_set, API_KEYS_COUNT)
+        received_data = dp.get_response()
 
-    dr = Reader()
-    records = dr.get_records()
+        dr = Reader(country)
+        records = dr.get_records()
 
-    is_first_day = len(records.get("views")) == 0
-    dh = DataHandler(received_data, records, is_first_day)
-    dh.save_data()
+        is_first_day = len(records.get("views")) == 0
+        dh = DataHandler(received_data, records, is_first_day, country)
+        dh.save_data()
 
     logger.debug("FINISH SCRAPPER")
 
